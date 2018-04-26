@@ -68,4 +68,8 @@ try:
         print('')
         print('')
 except KeyboardInterrupt:
+    # ctrl-c is an acceptable exit condition
+    pass
+except EOFError:
+    # ctrl-d is an acceptable exit condition too
     pass
